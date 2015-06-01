@@ -1,0 +1,127 @@
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
+
+
+/* =============================================================================
+                   Navigation
+   ========================================================================== */
+  ul.menu {
+    margin:10px 0 0 0;
+    padding:0;
+  }
+    ul.menu li {
+      display:inline;
+      margin-right: 10px;
+    }
+
+      ul.menu li a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $navFont;
+        font-size: 0.85em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: normal;
+        line-height: 2em;
+    }
+
+    
+		
+		ul.menu li a:hover {
+			border-bottom: 2px solid #f1abab;
+		}
+	
+
+
+.wrapper {
+	display: -webkit-flex;
+ 	display: -moz-flex;
+ 	display: -ms-flex;
+ 	display: -o-flex;
+ 	display: flex;
+ 	flex-direction: row;
+ 	align-content: flex-end;
+ 	align-items: center;
+ 	margin: 0 auto;
+ 	// background-color: $brandColour;
+ 	
+
+}
+
+// .bgImg {
+// 	background-color: red;
+// 	width: 100%;
+// }
+
+.navFull {
+	// background-color: $brandColour;
+	height: 70px;
+	width: 100%;
+	display: block;
+	float:left;
+	margin: 15px 0;
+}
+
+ .navLeft {
+    width: 30%;
+    float: left;
+    text-align: center;
+
+}
+
+.navLeft h1 a {
+	color:black;
+	padding-top: 7px;
+  font-family: $navFont;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 12px;
+  font-weight: normal;
+  font-style: normal;
+
+
+}
+
+
+.navRight {
+	float: left;
+	display: block;
+	width: 70%;
+	text-align: right;
+}
+
+.banner {
+	float: left;
+  	display: block;
+  	width: 100%;
+  	background-color: lightGrey;
+}
+
+.overlay h1 { 
+	color:red;
+}
+
+
+
+.companyInfo {
+	margin:0 auto;
+	width: 80%;
+
+	h2 {
+	text-transform:none;
+	color:lightGrey;
+	}
+}
+
+// .overlay {
+// 	position: fixed;
+// 	margin: 0 auto;
+// }
