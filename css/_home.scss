@@ -1,0 +1,139 @@
+
+.main {
+  background: url(img/star_sky_at_night.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding:1px;
+}
+
+.group {
+  // background-color:black;
+}
+
+.group h1 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 0;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.group h2 {
+  color: grey;
+  text-align: center;
+  text-transform: uppercase;
+  font-family:$titleFont;
+  
+}
+
+.group h3 {
+  color: #494949;
+  font-weight: 700;
+  line-height: .7em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $titleFont;
+  padding:5px 0;
+  font-size: 1.6em;
+  position: relative;
+}
+
+.contentNav {
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+  border-top:1px red solid;
+  border-bottom: 1px red solid;
+}
+
+.contentNav ul {
+  padding: 10px 0;
+  margin: 0;
+}
+
+.contentNav ul li {
+  color: white;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 8px;
+  display: inline-block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 5px; 
+}
+
+.contentNav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 0; 
+}
+
+.group {
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.logo { 
+  display: block;
+  box-sizing:border-box;
+  position: relative;
+  top: -50px;
+  left: 55%;
+  width: 150px;
+}
+
+.slash {
+  color: white;
+  padding: 8px;
+}
+
+div.line {
+  border-bottom: 2px solid red;
+  width: 20%;
+  margin:0 auto;
+}
+
+div.lineportfolio {
+  width: 10%;
+  margin: 0 auto 2%;
+}
+
+hr.redhr {
+  border: 0;
+    height: 1px;
+    background-color: red;
+    width: 24%;
+}
+
+hr.redhr.longer {
+  width: 10%;
+}
+
+
+p {
+  font-size: 1em;
+}
+  
+
+.arrow a {
+  font-size: 5em;
+  color: white;
+  display: block;
+  margin-left: 38%;
+}
+
+.arrow a:visited {
+  color: white;
+}
+
+.arrow a:hover, .nav a:hover {
+  color: #ed5c5c;
+}

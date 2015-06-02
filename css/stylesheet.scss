@@ -1,7 +1,10 @@
 // variables first,then normailize, then everything else
 @import "var";
 @import "normalizer";
+@import "typography";
 @import "header";
+@import "home";
+
 // @import "footer";
 // @import "index";
 // @import "menu";
@@ -10,12 +13,11 @@
 // @import "contact";
 // @import "single";
 /*
-Theme Name: Johar & .Co Theme
-Theme URI: http://hackeryou.com;
-Description: Starter theme for building any website. Created by HackerYou. Rename this to your own theme page.
-Version: 1.0
-Author: Johar
-Author URI: http://hackeryou.com
+Theme Name: JLai Digital
+Theme URI: http://jlai.digital;
+Description: Created by John Lai.
+Author: John Lai
+Author URI: http://digital.com
 */
 
 
@@ -477,6 +479,7 @@ p.form-allowed-tags, .nocomments { display:none; }
     margin: 0 0 1em 0;
   }
 
+
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
   {
     color: inherit;
@@ -760,7 +763,7 @@ p.form-allowed-tags, .nocomments { display:none; }
 
   header
   {
-    margin: 0 0 2em 0;
+    margin:0;
   }
 
     header h2, header h3

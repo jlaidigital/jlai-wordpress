@@ -6,7 +6,6 @@
     clear: both;
  }
 
-
 /* =============================================================================
                    Navigation
    ========================================================================== */
@@ -20,10 +19,10 @@
     }
 
       ul.menu li a {
-        color: black;
+        color: white;
         text-decoration: none;
         text-transform: uppercase;
-        font-family: $navFont;
+        font-family: $titleFont;
         font-size: 0.85em;
         text-transform: uppercase;
         text-decoration: none;
@@ -50,18 +49,11 @@
  	align-content: flex-end;
  	align-items: center;
  	margin: 0 auto;
- 	// background-color: $brandColour;
  	
 
 }
 
-// .bgImg {
-// 	background-color: red;
-// 	width: 100%;
-// }
-
 .navFull {
-	// background-color: $brandColour;
 	height: 70px;
 	width: 100%;
 	display: block;
@@ -73,13 +65,14 @@
     width: 30%;
     float: left;
     text-align: center;
+    background-color: black;
 
 }
 
 .navLeft h1 a {
-	color:black;
+	color:white;
 	padding-top: 7px;
-  font-family: $navFont;
+  font-family: $titleFont;
   font-size: 18px;
   text-transform: uppercase;
   text-decoration: none;
@@ -96,14 +89,14 @@
 	display: block;
 	width: 70%;
 	text-align: right;
+  color:white;
 }
 
-.banner {
-	float: left;
-  	display: block;
-  	width: 100%;
-  	background-color: lightGrey;
+.navRight a {
+  color:a;
 }
+
+
 
 .overlay h1 { 
 	color:red;
@@ -121,7 +114,4 @@
 	}
 }
 
-// .overlay {
-// 	position: fixed;
-// 	margin: 0 auto;
-// }
+
