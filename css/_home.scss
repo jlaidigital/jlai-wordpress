@@ -1,15 +1,20 @@
+.wrapper {
+  width: 100%;
+}
 
-.main {
+.bgHeader {
   background: url(img/star_sky_at_night.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding:1px;
+  height: 100vh;
 }
 
 .group {
-  // background-color:black;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 .group h1 {
@@ -28,6 +33,7 @@
   text-align: center;
   text-transform: uppercase;
   font-family:$titleFont;
+  font-size: 1.5em;
   
 }
 
@@ -74,11 +80,6 @@
   text-decoration: none;
   color: white;
   padding: 5px 0; 
-}
-
-.group {
-  margin: 0 auto;
-  padding-top: 150px;
 }
 
 .logo { 
@@ -136,4 +137,193 @@ p {
 
 .arrow a:hover, .nav a:hover {
   color: #ed5c5c;
+}
+/////////////////////////////////////
+// About me
+//////////////////////////////////////
+
+
+.about {
+  width: 100%;
+  background-color: white;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 0;
+  padding:5% 0;
+  float: left;
+  display: block;
+}
+
+.about p {
+  color: grey;
+  line-height: 2.5rem;
+}
+
+.smallBody {
+  width: 80%;
+  margin:0 auto;
+}
+
+.threeHalf {
+  float:left;
+  display: block;
+  background-color: red;
+  width: 30%;
+}
+
+.sevenHalf {
+  width: 70%;
+  float: left;
+  display: block;
+  background-color:darkGrey;
+  text-align: left;
+  padding:2.5%;
+}
+
+
+
+/////////////////////////////////////
+//////////////////////////////////////
+// Recent Work
+
+.recentWork {
+  margin: 2% auto 0;
+  background-color:lightGrey;
+  padding: 5% 0;
+  float:left;
+  display: block;
+  text-align: center;
+}
+
+
+.onethird {
+  float: left;
+  width: 30%;
+  box-sizing:border-box;
+  color: white;
+  margin-left: 2.5%
+}
+
+.onethird h3 {
+  font-size: 1.2rem;
+  color: white;
+  padding:0;
+
+}
+
+.onethird p {
+  color: lightGrey;
+  font-size: .8rem;
+  padding: 0 5% 5%;
+}
+
+
+.onethird:last-child {
+  margin-right: 0;
+}
+
+.onethird.topspace {
+  margin-top:2.5%;
+}
+
+.description {
+  background-color: black;
+  border-radius: 5px;
+}
+
+.description img {
+  width: 100%;
+}
+
+.description:hover {
+  background-color: #424242;
+}
+
+
+.social .iconcolor {
+  color: white;
+  font-size: 3em;
+  margin: 0 2.5%
+}
+
+.iconcolor:hover, .hovercolor:hover {
+  color: #ed5c5c;
+}
+
+.social {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+/////////////////////////////////////
+//////////////////////////////////////
+// Contact Form
+
+.contactForm {
+  background-color: darkGrey;
+  text-align: center;
+  padding-top: 20px;
+  color: #7a7a7a;
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+.contactForm h2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+
+.footer {
+  background-color: #000;
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 0;
+  height: auto;
+  margin: 40;
+}
+
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+input[type="submit"] {
+  padding: 10px 10px;
+  color: white;
+  background-color: #ed5c5c;
+  width: 30%;
+  margin: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.submit:hover {
+  background-color: red;
+}
+
+
+form {
+  width:100%;
+  margin: 0 auto;
+}
+
+textarea, .email, .name {
+  width: 60%;
+    height: 20vh;
+    background-color: #c1c1c1;
+   border: none;
+   border-radius:5px;
+   padding: 15px;
+   color: #fff;
+}
+
+.name, .email {
+  height: 7vh;
+  margin-bottom: 20px;
 }

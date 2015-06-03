@@ -23,7 +23,7 @@
 <header>
   <div class="container">
         <div class="header"> 
-            <nav class="navFull">
+            <nav class="navFull clearfix">
               <div class="navLeft">
                 <h1>
                    <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
