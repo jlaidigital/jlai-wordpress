@@ -96,16 +96,12 @@
   padding: 8px;
 }
 
-div.line {
+.line {
   border-bottom: 2px solid red;
   width: 20%;
   margin:0 auto;
 }
 
-div.lineportfolio {
-  width: 10%;
-  margin: 0 auto 2%;
-}
 
 hr.redhr {
   border: 0;
@@ -167,15 +163,19 @@ p {
 .threeHalf {
   float:left;
   display: block;
-  background-color: red;
   width: 30%;
+  padding-top: 2.5%;
+}
+
+.threeHalf img {
+  -webkit-clip-path: polygon(100% 0, 100% 88%, 19% 100%, 0 8%);
+  clip-path: polygon(100% 0, 100% 88%, 19% 100%, 0 8%);
 }
 
 .sevenHalf {
   width: 70%;
   float: left;
   display: block;
-  background-color:darkGrey;
   text-align: left;
   padding:2.5%;
 }
@@ -204,17 +204,44 @@ p {
   margin-left: 2.5%
 }
 
-.onethird h3 {
-  font-size: 1.2rem;
-  color: white;
-  padding:0;
+.projectImg img {
+  width: 100%;
+  display: block;
+  border-radius: 5px 5px 0 0;
+
+
+}
+.projectDes {
+  padding: 5%;  
+  background-color: black;
+  border-radius: 0 0 5px 5px;
 
 }
 
-.onethird p {
+.projectDes h3 {
+      font-size: 1.2rem;
+      color: white;
+      padding: 0;
+      color: #494949;
+      font-weight: 700;
+      line-height: .7em;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Roboto Condensed', sans-serif;
+}
+
+.projectDes p {
   color: lightGrey;
   font-size: .8rem;
-  padding: 0 5% 5%;
+}
+
+.linePortfolio {
+  width: 10%;
+  margin: 0 auto 2%;
+  border-bottom: 2px solid red;
+  width: 20%;
+  height: 1px;
+  background-color: red;
 }
 
 
@@ -223,13 +250,9 @@ p {
 }
 
 .onethird.topspace {
-  margin-top:2.5%;
+  // margin-top:2.5%;
 }
 
-.description {
-  background-color: black;
-  border-radius: 5px;
-}
 
 .description img {
   width: 100%;

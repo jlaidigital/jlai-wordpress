@@ -49,7 +49,9 @@ get_header();  ?>
 		<div class="smallBody">
 			<h3>Welcome to my portfolio</h3>
 			<div class="lineportfolio"></div>
-			<div class="threeHalf">img goes here</div>
+			<div class="threeHalf">
+		
+				<img src="<?php bloginfo('template_directory') ?>/img/john_lai.jpg" alt="John Lai's picture smiling"></div>
 			<div class="sevenHalf">
 				<p>I’m a Toronto based Front-end Developer & Designer currently enrolled in HackerYou.</p>
 
@@ -65,12 +67,15 @@ get_header();  ?>
 		<div class="recentWork clearfix">
 			<h3>Recent Work</h3>
 				<div class="linerecent"></div>
+
 				<div class="onethird">
-					<div class="description">
-					<img src="img/coppa_dolce_website.jpg" alt="Coppa Dolce Web Design" >
-					<h3>Web Design</h3>
-					<div class="lineportfolio"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut perspiciatis quo libero esse ex possimus enim laborum repellendus eum nemo. Cumque suscipit eum, consectetur officiis repellendus, minima quia aspernatur veniam.</p>
+					<div class="projectImg">
+						<img src="<?php bloginfo('template_directory')?>/img/coppa_dolce_website.jpg" alt="Coppa Dolce Web Design">
+					</div>
+					<div class="projectDes">
+						<h3>Web Design</h3>
+						<div class="linePortfolio"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut perspiciatis quo libero esse ex possimus enim laborum repellendus eum nemo. Cumque suscipit eum, consectetur officiis repellendus, minima quia aspernatur veniam.</p>
 					</div>
 				</div>
 
@@ -78,7 +83,7 @@ get_header();  ?>
 					<div class="description">
 					<img src="img/RaveneauxCC_EmailMarketing.jpg" alt="RaveneauxCC Email Blast">
 					<h3>EBlast Design</h3>
-					<div class="lineportfolio"></div>
+					<div class="linePortfolio"></div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut perspiciatis quo libero esse ex possimus enim laborum repellendus eum nemo. Cumque suscipit eum, consectetur officiis repellendus, minima quia aspernatur veniam.</p>
 					</div>
 				</div>
@@ -87,7 +92,7 @@ get_header();  ?>
 					<div class="description">
 					<img src="img/mysteric_river_web_splash.jpg" alt="Renegade Fishing Rod Combo">
 					<h3>Web Template Design</h3>
-					<div class="lineportfolio"></div>
+					<div class="linePortfolio"></div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut perspiciatis quo libero esse ex possimus enim laborum repellendus eum nemo. Cumque suscipit eum, consectetur officiis repellendus, minima quia aspernatur veniam.</p>
 					</div>
 				</div>
