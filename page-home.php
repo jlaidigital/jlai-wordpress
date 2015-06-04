@@ -68,35 +68,68 @@ get_header();  ?>
 			<h3>Recent Work</h3>
 				<div class="linerecent"></div>
 
-				<div class="onethird">
+					<?php 
+					// the query
+					$portfolioArgs = array('post_type' => 'portfolio','posts_per_page' => 3);
+					$the_query = new WP_Query( $portfolioArgs);
+
+					if ( $the_query->have_posts() ) : ?>
+
+						<!-- pagination here -->
+
+						<!-- the loop -->
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+				
+					<div class="oneThird">
+						<a href="<?php the_field('url'); ?>" target="_blank">
+
+							<div class="projectImg">
+								<?php $image = get_field('main_image') ?>
+								 <img src=" <?php echo $image['url']; ?>" alt="<?php echo $image['alt'];?>">
+								 <div class="seeLive">See it live</div>
+							</div>
+
+							<div class="projectDes">
+								<h3><?php the_title(); ?></h3>
+								<div class="linePortfolio"></div>
+								<p><?php the_content(); ?></p>
+							</div>
+						</a>
+					</div>
+
+						<?php endwhile; ?>
+						<!-- end of the loop -->
+
+						<!-- pagination here -->
+
+						<?php wp_reset_postdata(); ?>
+
+					<?php else : ?>
+						<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+					<?php endif; ?>
+
+		<!-- 	<div class="onethird">
 					<div class="projectImg">
-						<img src="<?php bloginfo('template_directory')?>/img/coppa_dolce_website.jpg" alt="Coppa Dolce Web Design">
+						<img src="<?php //bloginfo('template_directory')?>/img/RaveneauxCC_EmailMarketing.jpg" alt="RaveneauxCC Email Blast">
 					</div>
 					<div class="projectDes">
-						<h3>Web Design</h3>
+						<h3>EBlast Design</h3>
+						<div class="linePortfolio"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut perspiciatis quo libero esse ex possimus enim laborum repellendus eum nemo. Cumque suscipit eum, consectetur officiis repellendus, minima quia aspernatur veniam.</p>
+					</div>
+				</div> -->
+
+				<!-- <div class="onethird">
+					<div class="projectImg">
+						<img src="<?php //bloginfo('template_directory')?>/img/mysteric_river_web_splash.jpg" alt="Renegade Fishing Rod Combo">
+					</div>
+					<div class="projectDes">
+						<h3>Web Template Design</h3>
 						<div class="linePortfolio"></div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut perspiciatis quo libero esse ex possimus enim laborum repellendus eum nemo. Cumque suscipit eum, consectetur officiis repellendus, minima quia aspernatur veniam.</p>
 					</div>
 				</div>
-
-				<div class="onethird">
-					<div class="description">
-					<img src="img/RaveneauxCC_EmailMarketing.jpg" alt="RaveneauxCC Email Blast">
-					<h3>EBlast Design</h3>
-					<div class="linePortfolio"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut perspiciatis quo libero esse ex possimus enim laborum repellendus eum nemo. Cumque suscipit eum, consectetur officiis repellendus, minima quia aspernatur veniam.</p>
-					</div>
-				</div>
-
-				<div class="onethird">
-					<div class="description">
-					<img src="img/mysteric_river_web_splash.jpg" alt="Renegade Fishing Rod Combo">
-					<h3>Web Template Design</h3>
-					<div class="linePortfolio"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut perspiciatis quo libero esse ex possimus enim laborum repellendus eum nemo. Cumque suscipit eum, consectetur officiis repellendus, minima quia aspernatur veniam.</p>
-					</div>
-				</div>
-		
+		 -->
 		</div>
 
 

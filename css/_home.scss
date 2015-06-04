@@ -196,7 +196,7 @@ p {
 }
 
 
-.onethird {
+.oneThird {
   float: left;
   width: 30%;
   box-sizing:border-box;
@@ -204,13 +204,44 @@ p {
   margin-left: 2.5%
 }
 
+ a {
+  text-decoration: none;
+}
+
+.oneThird:hover {
+  background-color: red;
+  color:green;
+}
+
+.projectImg {
+  position:relative;
+}
+
 .projectImg img {
   width: 100%;
   display: block;
   border-radius: 5px 5px 0 0;
 
-
 }
+
+.seeLive {
+  position: absolute;
+  top:5%;
+  left: 5%;
+  background-color: black;
+  width: 90%;
+  height: 90%;
+  opacity: 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.seeLive:hover {
+  opacity: 1;
+}
+
+
+
 .projectDes {
   padding: 5%;  
   background-color: black;
@@ -222,17 +253,19 @@ p {
       font-size: 1.2rem;
       color: white;
       padding: 0;
-      color: #494949;
       font-weight: 700;
       line-height: .7em;
       text-align: center;
       text-transform: uppercase;
       font-family: 'Roboto Condensed', sans-serif;
+      margin-top: 2%;
 }
+
 
 .projectDes p {
   color: lightGrey;
   font-size: .8rem;
+  line-height: 1.6rem;
 }
 
 .linePortfolio {
@@ -245,9 +278,9 @@ p {
 }
 
 
-.onethird:last-child {
-  margin-right: 0;
-}
+// .onethird:last-child {
+//   margin-right: 0;
+// }
 
 .onethird.topspace {
   // margin-top:2.5%;
