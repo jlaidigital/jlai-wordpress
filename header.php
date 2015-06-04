@@ -7,11 +7,10 @@
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500,900|Roboto+Condensed:400italic,400,700' rel='stylesheet' type='text/css'>
 
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500,900|Roboto+Condensed:400italic,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
 
   <?php wp_head(); ?>
@@ -21,7 +20,7 @@
 <body <?php body_class(); ?>>
 
 <header>
-  <div class="container">
+<div class="wrapper">  <div class="container">
         <div class="header"> 
             <nav class="navFull clearfix">
               <div class="navLeft">
@@ -41,7 +40,7 @@
 
             </nav>
         </div>
-
-  </div> <!-- /.container -->
-</header><!--/.header-->
+    </div> <!-- /.container -->
+  </header><!--/.header-->
+</div>
 

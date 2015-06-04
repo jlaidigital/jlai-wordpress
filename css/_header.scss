@@ -10,7 +10,7 @@
                    Navigation
    ========================================================================== */
   ul.menu {
-    margin:10px 0 0 0;
+    margin:15px 0 0 0;
     padding:0;
   }
     ul.menu li {
@@ -54,30 +54,28 @@
 }
 
 .navFull {
-	height: 70px;
 	width: 100%;
-	display: block;
-	float:left;
-	margin: 15px 0;
+  display: block;
+  float: left;
 }
 
  .navLeft {
     width: 30%;
     float: left;
     text-align: center;
-    background-color: black;
 
 }
 
 .navLeft h1 a {
-	color:white;
-	padding-top: 7px;
-  font-family: $titleFont;
+	color: #fff;
+  text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 12px;
-  font-weight: normal;
-  font-style: normal;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 4rem;
+  letter-spacing: 1px;
+  font-weight: 900;
+  margin: 0;
 
 
 }

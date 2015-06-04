@@ -1,7 +1,14 @@
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  <div class="container clearfix">
+    <p></p>
   </div>
+
+  
+  		<div class="copyright">
+  			<p> &copy; JOHN LAI · All Rights Reserved · <?php echo date('Y'); ?></p>
+		</div>
+
+
 </footer>
 
 <script>

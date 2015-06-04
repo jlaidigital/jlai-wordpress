@@ -1,9 +1,11 @@
 // variables first,then normailize, then everything else
 @import "var";
 @import "normalizer";
-@import "typography";
 @import "header";
 @import "home";
+@import "typography";
+@import "footer";
+
 
 // @import "footer";
 // @import "index";
@@ -472,11 +474,11 @@ p.form-allowed-tags, .nocomments { display:none; }
 
   h1, h2, h3, h4, h5, h6
   {
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 0.04em;
-    color: #474747;
-    margin: 0 0 1em 0;
+    // text-transform: uppercase;
+    // font-weight: 800;
+    // letter-spacing: 0.04em;
+    // color: #474747;
+    // margin: 0 0 1em 0;
   }
 
 
@@ -489,9 +491,10 @@ p.form-allowed-tags, .nocomments { display:none; }
 
   h2
   {
-    font-size: 2em;
-    margin: 0 0 1.5em 0;
-    line-height: 1em;
+  color: grey;
+  text-align: center;
+  text-transform: uppercase;
+  font-family:$titleFont;
   }
 
     h2.fa
@@ -509,8 +512,14 @@ p.form-allowed-tags, .nocomments { display:none; }
 
   h3
   {
-    font-size: 1.35em;
-    margin-top: 2em;
+  color: #494949;
+  font-weight: 700;
+  line-height: .7em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $titleFont;
+  padding:5px 0;
+  font-size: 1.6rem;
   }
 
   strong
@@ -775,12 +784,7 @@ p.form-allowed-tags, .nocomments { display:none; }
     {
       margin: 0;
     }
-
-  footer
-  {
-    margin: 2.5em 0 0 0;
-  }
-
+    
   header.major
   {
     border-bottom: solid 1px #dbdbdb;

@@ -16,26 +16,25 @@ get_header();  ?>
 
 
   <div class="container clearfix">
-		
-		<div class="group clearfix">
-			<!-- To get a picture to display - 	<img class="logo" src="<?php //bloginfo('template_directory') ?>/img/jlailogo.png" alt="John Lai's Developer + Designer Logo"> -->
-			<img class="logo" src="<?php bloginfo('template_directory') ?>/img/jlailogo.png" alt="John Lai's Developer + Designer Logo">
-			<h1>John Lai </h1>
-			<h2>Front-End Developer + Designer</h2>
+					<div class="group clearfix">
+						<!-- To get a picture to display - 	<img class="logo" src="<?php //bloginfo('template_directory') ?>/img/jlailogo.png" alt="John Lai's Developer + Designer Logo"> -->
+						<img class="logo" src="<?php bloginfo('template_directory') ?>/img/jlailogo.png" alt="John Lai's Developer + Designer Logo">
+						<h1>John Lai </h1>
+						<h2>Front-End Developer + Designer</h2>
+						
+						<div class="contentNav">
+							<ul>
+								<li><a href="#about"> About </a></li><span class="slash">/</span>
+								<li><a href="#portfolio"> Portfolio </a></li> <span class="slash">/</span>
+								<li><a href="#contact">Contact</a></li><span class="slash">/</span>
+								<li><a href="mailto:lai.john.py@gmail.com">Email</a></li>
+							</ul>
+						</div>
 			
-			<div class="contentNav">
-				<ul>
-					<li><a href="#about"> About </a></li><span class="slash">/</span>
-					<li><a href="#portfolio"> Portfolio </a></li> <span class="slash">/</span>
-					<li><a href="#contact">Contact</a></li><span class="slash">/</span>
-					<li><a href="mailto:lai.john.py@gmail.com">Email</a></li>
-				</ul>
-			</div>
-
-		</div>
-		<div class="arrow">
-			<a href="#about"><i class="animated fadeInDown fa fa-angle-double-down"></i></a>
-		</div>
+					</div>
+					<div class="arrow">
+						<a href="#about"><i class="animated fadeInDown fa fa-angle-double-down"></i></a>
+					</div>
   	</div> <!-- /.container -->
 </div> <!-- /.main -->
 
@@ -48,7 +47,7 @@ get_header();  ?>
 
 		<div class="smallBody">
 			<h3>Welcome to my portfolio</h3>
-			<div class="lineportfolio"></div>
+			<div class="linePortfolio"></div>
 			<div class="threeHalf">
 		
 				<img src="<?php bloginfo('template_directory') ?>/img/john_lai.jpg" alt="John Lai's picture smiling"></div>
@@ -66,7 +65,7 @@ get_header();  ?>
 
 		<div class="recentWork clearfix">
 			<h3>Recent Work</h3>
-				<div class="linerecent"></div>
+				<div class="linePortfolio"></div>
 
 					<?php 
 					// the query
@@ -86,7 +85,7 @@ get_header();  ?>
 							<div class="projectImg">
 								<?php $image = get_field('main_image') ?>
 								 <img src=" <?php echo $image['url']; ?>" alt="<?php echo $image['alt'];?>">
-								 <div class="seeLive">See it live</div>
+								 <div class="seeLive"><span>View Live</span></div>
 							</div>
 
 							<div class="projectDes">
@@ -132,23 +131,35 @@ get_header();  ?>
 		 -->
 		</div>
 
+	<div class="contactSection clearfix">
+			<h3>Say Hello</h3>
+			<div class="linePortfolio"></div>
+	
+			<div class="contactLeft">
+				<p class="emailMe">
+				Email Me: <a class="hovercolor" href="mailto:chat@jlai.digital">
+				Chat@jlai.digital
+				</a></p>
+				or
+				<p class="callMe">
+				Call Me: <a class="hovercolor" href="tel:6472966528">647.296.6528
+				<a></p>	
 
-
-		<div class="contactForm">
-				<h3>Say Hello</h3>
-				<form>
-					<input class="name" type="text" name="name" value="Name">
-					<input class="email" type="text" name="email" value="Email">
-					<textarea class="comments" name="comments" rows="10" cols="30">Comments and Inquiries</textarea><br>
-					<input class="submit" type="submit" value="Send">
-				</form>
-		</div>
-
-
-
-
-
-
+				<p class="socialIcons"><a href="https://twitter.com/jlaidigital" target="_blank" ><i class="fa fa-twitter iconcolor"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/jlaidigital" target="_blank">
+				<i class="fa fa-linkedin iconcolor"></i>
+				</a>
+				<a href="https://github.com/jlaidigital" target="_blank">
+				<i class="fa fa-github"></i></a>
+				</p>
+			</div>
+			<div class="contactRight">
+				<div class="formWrapper">
+					<?php the_field('contact_form'); ?>
+				</div>
+			</div>
+	</div>
 
 
 
