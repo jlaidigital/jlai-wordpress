@@ -132,10 +132,10 @@ get_header();  ?>
 		</div>
 
 	<div class="contactSection clearfix">
-			<h3>Say Hello</h3>
-			<div class="linePortfolio"></div>
 	
 			<div class="contactLeft">
+			<h3>Say Hello</h3>
+			<div class="linePortfolio alignRight "></div>
 				<p class="emailMe">
 				Email Me: <a class="hovercolor" href="mailto:chat@jlai.digital">
 				Chat@jlai.digital
@@ -153,6 +153,7 @@ get_header();  ?>
 				<a href="https://github.com/jlaidigital" target="_blank">
 				<i class="fa fa-github"></i></a>
 				</p>
+				
 			</div>
 			<div class="contactRight">
 				<div class="formWrapper">

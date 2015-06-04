@@ -19,6 +19,7 @@
  s.parentNode.insertBefore(g,s)}(document,"script"));
 </script>
 
+
 <?php wp_footer(); ?>
 </body>
 </html>

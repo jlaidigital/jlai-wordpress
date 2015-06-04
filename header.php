@@ -12,7 +12,7 @@
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
-
+  
   <?php wp_head(); ?>
 </head>
 
@@ -20,9 +20,9 @@
 <body <?php body_class(); ?>>
 
 <header>
-<div class="wrapper">  <div class="container">
-        <div class="header"> 
-            <nav class="navFull clearfix">
+<div class="wrapper navFull">  
+    <div class="container">
+        <div class="header clearfix"> 
               <div class="navLeft">
                 <h1>
                    <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
@@ -38,7 +38,6 @@
                 
               </nav>
 
-            </nav>
         </div>
     </div> <!-- /.container -->
   </header><!--/.header-->

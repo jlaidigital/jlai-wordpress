@@ -70,6 +70,7 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
+
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts' );

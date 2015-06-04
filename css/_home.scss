@@ -191,6 +191,7 @@ p {
   display: block;
   text-align: left;
   padding:2.5%;
+  
 }
 
 
@@ -310,7 +311,7 @@ p {
 .linePortfolio {
   width: 10%;
   border-bottom: 1px solid red;
-  margin: 1rem auto;
+  margin: 3% auto;
 }
 
 // .onethird:last-child {
@@ -352,7 +353,7 @@ p {
 // Contact Form
 
 .contactSection {
-  background-color: darkGrey;
+  background-color: #262525;
   text-align: center;
   padding-top: 20px;
   color: #7a7a7a;
@@ -379,6 +380,10 @@ p {
   padding: 0;
   text-align: right;
   padding: 5% 3% 5% 0;
+    h3 {
+      text-align: right;
+      color:white;
+    }
     p {
       color: grey;
       line-height: 2.5rem;
@@ -392,6 +397,10 @@ p {
 
 }
 
+.linePortfolio.alignRight {
+    margin-right: 2%;
+}
+
 .contactRight {
   width: 70%;
   display:block;
@@ -400,37 +409,42 @@ p {
 
 }
 
-input[type="submit"] {
-  padding: 10px 10px;
-  color: white;
-  background-color: #ed5c5c;
-  width: 30%;
-  margin: 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  text-transform: uppercase;
-}
 
 form input, form select, form textarea {
-    -webkit-appearance: none;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    background-color: grey;
-    color:white;
+  height: 45px;
+  border-radius: 10px;
+  color: white;
+  padding: 15px;
+  width: 70%;
+  border: 1px solid grey;
+  background-color: #262525;
   }
 form textarea {
   height: 100px;
 }
 
-.formTitle{
-  color: white;
+input[type="submit"] {
+      background-color: #ed5c5c;
+      width: 30%;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: white;
+      margin-bottom: 2rem;
 }
 
 .submit:hover {
   background-color: red;
 }
+.formTitle{
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed',sans-serif;
+}
+
+
+
 .formTitle{
    border: none;
    color: #fff;
@@ -439,7 +453,17 @@ form textarea {
 .formWrapper {
     padding-left: 10%;
     padding-top: 4%;
+    width: 100%;
 
+}
+
+.contactLeft .fa {
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+.contactLeft .fa:hover{
+  color: #ED5C5C;
 }
 div.wpcf7 {
     text-align: left;
